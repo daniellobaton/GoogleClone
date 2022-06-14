@@ -85,3 +85,34 @@ html, body{
     width: 100%;
 
 }
+
+.header{
+
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.wrapper .headerContent{
+
+    display: flex;
+    align-items: center;
+}
+
+.headerContent .logoContainer{
+
+    width: 150px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+.headerContent .searchContainer{
+
+    flex: 1;
+
+}
+
+.headerContent .searchContainer form{
+
+    margin: 15px 0 28px;
+
+}
