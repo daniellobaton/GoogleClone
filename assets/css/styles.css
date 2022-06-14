@@ -154,3 +154,43 @@ html, body{
     width: 22px;
     height: 44px;
 }
+
+.tabsContainer{
+
+    margin-left: 150px;
+
+}
+
+.tabsContainer .tabsList{
+
+    padding: 0;
+    margin: 0;
+}
+
+.tabsContainer .tabsList li{
+
+    display: inline-block;
+    padding: 0 16px 12px;
+    color: #777;
+    font-size: 13px;
+
+}
+
+.tabsContainer .tabsList li a{
+
+    text-decoration: none;
+
+}
+
+.tabsContainer .tabsList li.active{
+
+    border-bottom: 3px solid #1A73E8;
+
+}
+
+.tabsContainer .tabsList li.active a{
+
+    font-weight: bold;
+    color: #1A73E8;
+
+}

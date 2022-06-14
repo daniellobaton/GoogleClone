@@ -1,3 +1,23 @@
+<?php
+
+if(isset($_GET["term"])){
+
+    $term = $_GET["term"];
+
+}else{
+
+    exit("Debes ingresar un término");
+
+}
+
+
+
+$type = isset($_GET["type"]) ? $_GET["type"] : "sites";
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,6 +62,19 @@
                     </form>
 
                 </div>
+
+            </div>
+
+            <div class="tabsContainer">
+
+                <ul class="tabsList">
+                    <li class="<?php echo $type ==  'sites' ? 'active' : ''; ?>">
+                        <a href='<?php echo "search.php?term=$term&type=sites"; ?>'>Sitios</a>
+                    </li>
+                    <li class="<?php echo $type ==  'images' ? 'active' : ''; ?>">
+                        <a href='<?php echo "search.php?term=$term&type=images"; ?>'>Imágenes</a>
+                    </li>
+                </ul>
 
             </div>
 
